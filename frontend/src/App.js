@@ -1,26 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import logo from './assets/logo.svg'
+import coffe from './assets/coffe.svg'
+import './App.css'
+import Formulario from './Form'
 
-export default App;
+function App () {
+    return (
+
+      <div className="App">
+
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+        </header>
+
+        <main>
+
+          <div className="apresentation">
+            <strong> Seja Bem-vindo! </strong>
+          </div>
+          <div className="slogan">
+            <span>Café é sempre uma boa ideia </span>
+            <img src={coffe} className="Coffe-image" alt="coffe"/>
+          </div>
+  
+          <div className="pedido" >
+            <h1> Faça seu Pedido </h1>
+                  
+            <Formulario />
+          </div>
+
+        </main>
+      </div>
+    );
+  }
+
+  export default App;
